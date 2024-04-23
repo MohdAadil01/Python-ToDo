@@ -25,7 +25,7 @@ class TodoApp:
     def add_task(self):
         task = self.task_entry.get()
         if task:
-            self.tasks.append((task, False))  # Store task with its completion status
+            self.tasks.append((task, False)) 
             self.update_task_listbox()
 
     def mark_done(self):
@@ -33,7 +33,7 @@ class TodoApp:
         if selection:
             index = selection[0]
             task, status = self.tasks[index]
-            self.tasks[index] = (task, not status)  # Toggle task completion status
+            self.tasks[index] = (task, not status) 
             self.update_task_listbox()
 
     def delete_task(self):
